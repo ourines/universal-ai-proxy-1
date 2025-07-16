@@ -1,0 +1,24 @@
+{
+  "name": "universal-ai-proxy",
+  "description": "Universal AI API proxy that converts Claude and Gemini API requests to any OpenAI-compatible endpoint",
+  "main": "src/index.ts",
+  "repository": "https://github.com/ourines/universal-ai-proxy",
+  "variables": {
+    "TARGET_MODEL": {
+      "type": "secret",
+      "description": "Target model name (default: moonshotai/kimi-k2-instruct)"
+    },
+    "TARGET_PROVIDER": {
+      "type": "secret", 
+      "description": "Provider name (default: groq)"
+    },
+    "TARGET_BASE_URL": {
+      "type": "secret",
+      "description": "OpenAI-compatible API base URL (default: https://api.groq.com/openai/v1)"
+    },
+    "TARGET_MAX_TOKENS": {
+      "type": "secret",
+      "description": "Maximum tokens limit (default: 16384)"
+    }
+  }
+}
